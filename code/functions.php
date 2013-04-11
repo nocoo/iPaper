@@ -17,9 +17,9 @@
  *
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package iPaper
+ * @subpackage iPaper
+ * @since iPaper 1.0
  */
 
 /**
@@ -39,7 +39,7 @@ if ( ! isset( $content_width ) )
  * @uses register_nav_menu() To add support for navigation menus.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_setup() {
 	/*
@@ -85,7 +85,7 @@ require( get_template_directory() . '/inc/custom-header.php' );
 /**
  * Enqueues scripts and styles for front-end.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_scripts_styles() {
 	global $wp_styles;
@@ -156,7 +156,7 @@ add_action( 'wp_enqueue_scripts', 'twentytwelve_scripts_styles' );
  * Creates a nicely formatted and more specific title element text
  * for output in head of document, based on current view.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  *
  * @param string $title Default title text for current view.
  * @param string $sep Optional separator.
@@ -187,7 +187,7 @@ add_filter( 'wp_title', 'twentytwelve_wp_title', 10, 2 );
 /**
  * Makes our wp_nav_menu() fallback -- wp_page_menu() -- show a home link.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_page_menu_args( $args ) {
 	if ( ! isset( $args['show_home'] ) )
@@ -199,7 +199,7 @@ add_filter( 'wp_page_menu_args', 'twentytwelve_page_menu_args' );
 /**
  * Registers our main widget area and the front page widget areas.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_widgets_init() {
 	register_sidebar( array(
@@ -238,7 +238,7 @@ if ( ! function_exists( 'twentytwelve_content_nav' ) ) :
 /**
  * Displays navigation to next/previous pages when applicable.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_content_nav( $html_id ) {
 	global $wp_query;
@@ -264,7 +264,7 @@ if ( ! function_exists( 'twentytwelve_comment' ) ) :
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
@@ -325,7 +325,7 @@ if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :
  *
  * Create your own twentytwelve_entry_meta() to override in a child theme.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
@@ -376,7 +376,7 @@ endif;
  * 4. Custom fonts enabled.
  * 5. Single or multiple authors.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  *
  * @param array Existing class values.
  * @return array Filtered class values.
@@ -415,7 +415,7 @@ add_filter( 'body_class', 'twentytwelve_body_class' );
  * Adjusts content_width value for full-width and single image attachment
  * templates, and when there are no active widgets in the sidebar.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_content_width() {
 	if ( is_page_template( 'page-templates/full-width.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
@@ -428,7 +428,7 @@ add_action( 'template_redirect', 'twentytwelve_content_width' );
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  * @return void
@@ -442,7 +442,7 @@ add_action( 'customize_register', 'twentytwelve_customize_register' );
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );

@@ -2,9 +2,9 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package iPaper
+ * @subpackage iPaper
+ * @since iPaper 1.0
  */
 
 get_header(); ?>

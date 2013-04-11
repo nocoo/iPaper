@@ -4,9 +4,9 @@
  *
  * If no active widgets in either sidebar, they will be hidden completely.
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package iPaper
+ * @subpackage iPaper
+ * @since iPaper 1.0
  */
 
 /*

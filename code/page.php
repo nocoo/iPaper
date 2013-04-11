@@ -7,9 +7,9 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package iPaper
+ * @subpackage iPaper
+ * @since iPaper 1.0
  */
 
 get_header(); ?>

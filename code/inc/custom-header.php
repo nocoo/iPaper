@@ -3,9 +3,9 @@
  * Implements an optional custom header for Twenty Twelve.
  * See http://codex.wordpress.org/Custom_Headers
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package iPaper
+ * @subpackage iPaper
+ * @since iPaper 1.0
  */
 
 /**
@@ -16,7 +16,7 @@
  * @uses twentytwelve_admin_header_style() to style wp-admin form.
  * @uses twentytwelve_admin_header_image() to add custom markup to wp-admin form.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_custom_header_setup() {
 	$args = array(
@@ -51,7 +51,7 @@ add_action( 'after_setup_theme', 'twentytwelve_custom_header_setup' );
  *
  * get_header_textcolor() options: 444 is default, hide text (returns 'blank'), or any hex value.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_header_style() {
 	$text_color = get_header_textcolor();
@@ -89,7 +89,7 @@ function twentytwelve_header_style() {
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_admin_header_style() {
 ?>
@@ -129,7 +129,7 @@ function twentytwelve_admin_header_style() {
  * Outputs markup to be displayed on the Appearance > Header admin panel.
  * This callback overrides the default markup displayed there.
  *
- * @since Twenty Twelve 1.0
+ * @since iPaper 1.0
  */
 function twentytwelve_admin_header_image() {
 	?>
