@@ -8,17 +8,19 @@ table{border-collapse:collapse;border-spacing:0}
 .clear{width:0;height:0;clear:both}
 
 #container {
-    width: 854px;
+    width: 864px;
     margin: 0 auto;
-    border: 6px solid #ed1c24;
-    border-left-width: 100px;
+    border: 6px solid #D6181F;
+    border-left-width: 0;
+    background: url('../images/leftbg.jpg') left repeat-y;
+    padding-left: 90px;
     position: relative;
 }
 
 #header {
     position: relative;
     height: 90px;
-    border-bottom: 2px solid #ed1c24;
+    border-bottom: 2px solid #D6181F;
 }
 
 #header .logo {
@@ -35,6 +37,13 @@ table{border-collapse:collapse;border-spacing:0}
     position: absolute;
     right: 10px; top: 1px;
     background: url('../images/logo2.png') center no-repeat;
+}
+
+#header_ad {
+    position: absolute;
+    width: 420px; height: 60px;
+    right: 120px; top: 10px;
+    overflow: hidden;
 }
 
 #footer {
@@ -54,6 +63,42 @@ table{border-collapse:collapse;border-spacing:0}
 #footer .ad.bottom-ad-4 { background: url('../images/bottom-ad-4.jpg') center no-repeat; }
 #footer .ad.bottom-ad-5 { background: url('../images/bottom-ad-5.jpg') center no-repeat; }
 
+#left_nav {
+    width: 90px;
+    position: absolute;
+    left: 0; top: 0;
+    color: #FFF; text-align: center;
+    font-size: 14px;
+    background: url('../images/leftfire.jpg') no-repeat;
+}
+
+#left_nav p.title {
+    height: 70px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 16px;
+    background: url('../images/leftarrow.jpg') no-repeat;
+    margin-top: 92px;
+    margin-bottom: 20px;
+}
+
+#left_nav ul { list-style: none; }
+#left_nav ul li a { color: #FFF; line-height: 30px; text-decoration: none; border-bottom: 1px dotted #AAA; }
+
+#right_nav {
+    width: 200px;
+    position: absolute;
+    right: 10px; top: 105px;
+    color: #555;
+    font-size: 12px;
+    background: #F5F5F5;
+    border: 1px solid #DDD;
+    padding: 10px 0;
+}
+#right_nav p.title { color: #333; line-height: 30px; margin-left: 10px; font-size: 14px; }
+#right_nav ul { margin-left: 30px; }
+#right_nav ul li a { color: #555; line-height: 20px; }
+
 #content .canvas {
     width: 600px;
     height: 860px;
@@ -67,18 +112,18 @@ table{border-collapse:collapse;border-spacing:0}
 }
 
 #content .canvas .hot:hover {
-    border: 4px dotted #ed1c24;
+    border: 4px dotted #D6181F;
 }
 
 #navigation {
     font-size: 12px;
     position: absolute;
-    top: 100px; left: 600px;
+    top: 100px; left: 680px;
     width: 35px;
     list-style: none;
 }
 
-#navigation li a { 
+#navigation li a {
     display: block;
 }
 
